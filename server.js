@@ -6,7 +6,7 @@ const app=express();
 
 app.use(express.json());
 app.use('/api',authrouter);
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 connectDB();
 console.log("ENV CHECK:", process.env.MONGO_URI);
