@@ -13,7 +13,7 @@ console.log("ENV CHECK:", process.env.MONGO_URI);
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/signup.html");
+    res.sendFile(__dirname + "/Public/Signup.html");
 });
 
 app.listen(PORT, () => {
