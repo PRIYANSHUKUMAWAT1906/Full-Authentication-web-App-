@@ -12,6 +12,10 @@ connectDB();
 console.log("ENV CHECK:", process.env.MONGO_URI);
 const PORT = process.env.PORT || 3000;
 
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/Public/signup.html");
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
